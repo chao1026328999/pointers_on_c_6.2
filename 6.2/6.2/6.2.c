@@ -21,7 +21,9 @@ int find_char(char **strings, int value)
 }
 int main()
 {
-	char **strings = ;
-	printf("%d", find_char(strings, 1));
-
+	char *strings[3] = {"A23","123",NULL};
+	char **p;
+	p = strings;
+	printf("%d", find_char(p, 65));			//AµÄasciiÖµÎª65  1
+	getchar();
 }
